@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#div1 {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+#div1::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+#div1::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 500px){
+   #div1 {
+    width: 150px;
+    height: 150px;
+   } 
+   #div1::before{
+    width: 75px;
+    height: 75px;
+   }
+   #div1::after{
+    width: 75px;
+    height: 75px;
+   }
+}
