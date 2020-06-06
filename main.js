@@ -59,7 +59,7 @@ let step = ()=>{
         demo.innerHTML = tmp;
         style.innerHTML = str.substring(0, n);
         n++;
-    },);
+    },10);
     window.scrollTo(0,document.body.scrollHeight);
 }
 step();
